@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_profiles' ? 'active' : ''}
-          onClick={() => setActiveTab('user_profiles')}
+          className={activeTab === 'user_profiles_with_sports_interests_and_preferences' ? 'active' : ''}
+          onClick={() => setActiveTab('user_profiles_with_sports_interests_and_preferences')}
         >
-          User Profiles
+          User Profiles With Sports Interests And Preferences
         </button>
         <button 
-          className={activeTab === 'sport_interest_matching' ? 'active' : ''}
-          onClick={() => setActiveTab('sport_interest_matching')}
+          className={activeTab === 'swiping_mechanism_for_matching_with_other_users' ? 'active' : ''}
+          onClick={() => setActiveTab('swiping_mechanism_for_matching_with_other_users')}
         >
-          Sport Interest Matching
+          Swiping Mechanism For Matching With Other Users
         </button>
         <button 
-          className={activeTab === 'event_creation_and_rsvp' ? 'active' : ''}
-          onClick={() => setActiveTab('event_creation_and_rsvp')}
+          className={activeTab === 'in_app_messaging_for_communication' ? 'active' : ''}
+          onClick={() => setActiveTab('in_app_messaging_for_communication')}
         >
-          Event Creation And Rsvp
+          In App Messaging For Communication
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_profiles' && (
+        {activeTab === 'user_profiles_with_sports_interests_and_preferences' && (
           <div className="tab-content">
-            <h2>User Profiles</h2>
-            <p>Manage your user profiles here.</p>
+            <h2>User profiles with sports interests and preferences</h2>
+            <p>Manage your user profiles with sports interests and preferences here.</p>
           </div>
         )}
 
-        {activeTab === 'sport_interest_matching' && (
+        {activeTab === 'swiping_mechanism_for_matching_with_other_users' && (
           <div className="tab-content">
-            <h2>Sport Interest Matching</h2>
-            <p>Manage your sport interest matching here.</p>
+            <h2>Swiping mechanism for matching with other users</h2>
+            <p>Manage your swiping mechanism for matching with other users here.</p>
           </div>
         )}
 
-        {activeTab === 'event_creation_and_rsvp' && (
+        {activeTab === 'in_app_messaging_for_communication' && (
           <div className="tab-content">
-            <h2>Event Creation and RSVP</h2>
-            <p>Manage your event creation and rsvp here.</p>
+            <h2>In-app messaging for communication</h2>
+            <p>Manage your in app messaging for communication here.</p>
           </div>
         )}
       </div>
