@@ -2,10 +2,10 @@ import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
 import UserProfile from './components/UserProfile'
-import MatchList from './components/MatchList'
-import EventCard from './components/EventCard'
-import MessagingInterface from './components/MessagingInterface'
-import ForumThread from './components/ForumThread'
+import SwipeCard from './components/SwipeCard'
+import Messages from './components/Messages'
+import EventList from './components/EventList'
+import Forum from './components/Forum'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>SportsMatch</h1>
-          <p className="tagline">Connect Over Your Passion for Sports</p>
+          <p className="tagline">Connect Through Your Love for Sports</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Profiles</li>
-          <li>Sport Interest Matching</li>
-          <li>Event Creation and RSVP</li>
-          <li>Messaging and Chat</li>
-          <li>Community Forums</li>
-          <li>Activity Suggestions</li>
+          <li>User profiles with sports interests and preferences</li>
+          <li>Swiping mechanism for matching with other users</li>
+          <li>In-app messaging for communication</li>
+          <li>Event creation for local sports activities</li>
+          <li>Community forums for discussions on sports</li>
+          <li>Personalized recommendations based on user activity</li>
           </ul>
         </div>
         <p>&copy; 2025 SportsMatch. Built with React + TypeScript + Vite</p>
